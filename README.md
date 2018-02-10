@@ -1,6 +1,8 @@
 # rgbToHex
 
-A sample command-line application.
-
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+convert r g b value to hex string
+Eg:
+r = 0
+g = 0
+b = 0
+Output = #000000
