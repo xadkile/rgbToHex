@@ -30,4 +30,20 @@ void main() {
        expect(e.message, "PARSING ERR: \"aa\" is not a valid number");
     }
   });
+
+  test("convertRgb negative value",(){
+    try{
+      convertRgb("-2", "12", "66");
+    } on ValueOutOfRangeException catch(e){
+      expect(e.message,"VALUE ERR: \"-2\" is out of 0->255 range");
+    }
+  });
+
+  test("convertRgb value > 255",(){
+    try{
+      convertRgb("288", "12", "66");
+    } on ValueOutOfRangeException catch(e){
+      expect(e.message,"VALUE ERR: \"288\" is out of 0->255 range");
+    }
+  });
 }

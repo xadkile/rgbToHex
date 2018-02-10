@@ -9,6 +9,8 @@ void main(List<String> args){
       print(rgbToHex.convertRgb(args[0], args[1], args[2]));
     } on rgbToHex.ValueParsingException catch(exception) {
       print(exception.message);
+    } on rgbToHex.ValueOutOfRangeException catch(exception){
+      print(exception.message);
     }
   }
 }
