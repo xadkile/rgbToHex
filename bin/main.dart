@@ -1,3 +1,4 @@
+#!/usr/bin/env dart
 import 'package:rgbToHex/rgbToHex.dart' as rgbToHex;
 import "dart:io";
 void main(List<String> args){
@@ -14,4 +15,3 @@ void main(List<String> args){
     }
   }
 }
-
