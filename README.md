@@ -7,7 +7,8 @@ g = 0
 b = 0
 Output = #000000
 
-#Get it using pub
+# Get it using pub
+
 pub is a tool for managing Dart packages.
 
 More about: https://www.dartlang.org/tools/pub/cmd/pub-global#running-a-script-from-your-path
